@@ -1,0 +1,315 @@
+.PopUp_1 {
+    --theme: rgb(76, 128, 150);
+    padding: 1.25rem 1rem 2.25rem;
+    border-radius: 15px;
+    background-color: #fbfbfb;
+    box-shadow: rgba(145, 158, 171, .2) 6px -7px 14px 0px, rgba(145, 158, 171, .12) -7px 7px 24px 6px;
+    width: 430px;
+
+    .Header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    svg {
+        color: #262626;
+        opacity: 0.5;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .Body {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #565656;
+            margin-bottom: 1.25rem;
+        }
+
+
+        .Footer {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .button {
+                display: inline-flex;
+                border-radius: 8px;
+                padding: 0.5rem 2.25rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border: 2px solid var(--theme);
+                color: var(--theme);
+
+                &+.button {
+                    margin-left: 0.5rem;
+                    background: var(--theme);
+                    color: #fbfbfb;
+                    opacity: 1;
+                    box-shadow: rgb(76 128 150 / 87%) 2px 3px 6px 0px;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.PopUp_2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: rgba(145, 158, 171, .2) 6px -7px 14px 0px, rgba(145, 158, 171, .12) -7px 7px 24px 6px;
+    width: 100%;
+    max-width: 728px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .Illustration {
+        flex: 1 0.5 50%;
+        background: #0093E9 linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Information {
+        flex: 1 1 50%;
+        padding: 1.75rem 1rem;
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                list-style: none;
+                font-size: 1.25rem;
+                font-weight: 400;
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+
+                label {
+                    cursor: pointer;
+                }
+
+                input[type="checkbox"] {
+                    --size: 24px;
+                    appearance: none;
+                    height: var(--size);
+                    width: var(--size);
+                    transition: all 0.15s ease-out 0s;
+                    border: 0;
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                    outline: none;
+                    position: relative;
+                    padding: 0;
+                    border-radius: 99em;
+                    color: #fbfbfb;
+                    background: #bfcacb8a;
+
+                    &:checked {
+                        background: #0076bb;
+
+                        &::before {
+                            height: var(--size);
+                            width: var(--size);
+                            position: absolute;
+                            inset: 0;
+                            top: 50%;
+                            left: 50%;
+                            translate: -50% -50%;
+                            content: url("data:image/svg+xml;charset=UTF-8,%3csvg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 24 24' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg' style=' fill: %23fff; '%3e%3cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3e%3c/path%3e%3c/svg%3e");
+                            display: inline-block;
+                            text-align: center;
+                            line-height: var(--size);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        textarea {
+            width: 100%;
+            margin-block: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            resize: vertical;
+            font-size: 1.25rem;
+            min-height: 80px;
+            font-weight: 500;
+            padding: 0.5rem;
+
+            &::placeholder {
+                opacity: 0.7;
+            }
+        }
+
+        .BtnContainer {
+            display: flex;
+            justify-content: flex-end;
+            margin-block: 1rem 0.5rem;
+            align-items: center;
+
+
+            .button {
+                display: inline-flex;
+                border-radius: 8px;
+                padding: 0.5rem 2.25rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border: 2px solid #edf2f5;
+                background: #edf2f5;
+                color: #252525;
+
+                &+.button {
+                    margin-left: 0.5rem;
+                    background: #3a70ba;
+                    color: #fbfbfb;
+                    opacity: 1;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.PopUp_3 {
+    --theme: rgb(76, 128, 150);
+    padding: 1.5rem 1.25rem 2.25rem;
+    border-radius: 15px;
+    background-color: #fbfbfb;
+    box-shadow: rgba(145, 158, 171, .2) 6px -7px 14px 0px, rgba(145, 158, 171, .12) -7px 7px 24px 6px;
+    width: 430px;
+
+    .Header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .Close {
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        opacity: 0.5;
+        cursor: pointer;
+        --size: 32px;
+        height: var(--size);
+        width: var(--size);
+        transition: all 250ms ease-in-out;
+        position: relative;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        svg {
+            color: #262626;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+
+    .Body {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+
+        }
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 0.5rem;
+            margin-block: 1rem;
+
+            li {
+                list-style: none;
+                font-size: 1.25rem;
+                font-weight: 400;
+
+
+                label {
+                    cursor: pointer;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    border-radius: 8px;
+                    padding: 0.75rem;
+                    --size: 64px;
+                    height: var(--size);
+                    width: var(--size);
+                    font-weight: 600;
+                    border: 1px solid #ddd;
+                }
+
+                input[type="checkbox"] {
+                    display: none;
+
+                    &:checked {
+
+                        &~label {
+                            background: var(--theme);
+                            border: 1px solid var(--theme);
+                            color: #fbfbfb;
+                            box-shadow: rgba(145, 158, 171, .2) 6px -7px 14px 0px, rgba(145, 158, 171, .12) -7px 7px 24px 6px;
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+        hr {
+            border-color: #eeeeee69;
+        }
+
+        .Submit {
+            width: 100%;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-block: 0.75rem;
+            border: 1px solid #ddd;
+
+        }
+    }
+}
